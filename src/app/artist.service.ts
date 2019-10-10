@@ -1,9 +1,12 @@
+import { HttpClient } from 'selenium-webdriver/http';
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ArtistService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) {
+    console.log('ArtistService');
+  }
 }
